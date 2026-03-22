@@ -13,12 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById(fieldId);
     if (errorSpan) errorSpan.textContent = message;
 
-    // Para campos normales (con id)
+    // Para campos normales 
     if (input) {
       input.classList.remove('is-valid');
       input.classList.add('is-invalid');
     }
-    // Caso especial: grupo de radios
     if (fieldId === 'current-role' && currentRoleGroup) {
       currentRoleGroup.classList.remove('is-valid');
       currentRoleGroup.classList.add('is-invalid');
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstInvalid = document.querySelector('.is-invalid');
     if (firstInvalid) {
       firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Si es un grupo de radios, enfocar el primer radio
       if (firstInvalid.id === 'current-role-group') {
         const firstRadio = firstInvalid.querySelector('input[type="radio"]');
         if (firstRadio) firstRadio.focus({ preventScroll: true });
@@ -332,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
     confirmInput.addEventListener('input', revalidateConfirm);
   }
 
-  // Fecha de nacimiento (asegurar change)
+  // Fecha de nacimiento 
   const birthDate = document.getElementById('birth-date');
   if (birthDate) {
     birthDate.addEventListener('change', () => {
@@ -362,7 +360,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Archivo de perfil
   const profilePic = document.getElementById('profile-pic');
   if (profilePic) {
     profilePic.addEventListener('change', () => {
@@ -372,6 +369,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Limpiar estado inicial
   clearAllErrors();
 });
