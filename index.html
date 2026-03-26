@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
@@ -17,10 +17,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-vidrio">
   <div class="container">
     <a class="navbar-brand" href="#hero">
-    <img src="images/logo.png" 
-     alt="Polaris" 
-     class="imagen-circular"
-     style="height: 70px; width: 70px; margin-right: 10px; object-fit: cover;">
+      <img src="img/logo.png" 
+         alt="Polaris" 
+       style="height: 70px; width: auto; margin-right: 5px;">
   <span class="fw-bold texto-degradado">POLARIS</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPolaris">
@@ -32,13 +31,13 @@
         <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="#members">Miembros</a></li>
-        <li href="registro.html" class="nav-item"><a class="nav-link" href="#cta">Unirse</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cta">Unirse</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO (sin el badge de comunidad exclusiva) -->
 <section id="hero" class="hero">
   <div class="hero-capa"></div>
   <div class="container position-relative text-center text-md-start" style="z-index: 3;">
@@ -50,12 +49,13 @@
           <a href="#cta" class="btn boton-neon btn-lg px-5 py-3">Acceso exclusivo <i class="bi bi-arrow-right-short"></i></a>
           <a href="#projects" class="btn boton-contorno-neon btn-lg px-5 py-3">Conoce los proyectos</a>
         </div>
+        <!-- El badge ha sido eliminado -->
       </div>
     </div>
   </div>
 </section>
 
-<!-- SOBRE POLARIS  -->
+<!-- SOBRE POLARIS (Dra. Martínez) - con espacio para tu logo -->
 <section id="about" class="container">
   <div class="row align-items-center g-5">
     <div class="col-md-7">
@@ -70,8 +70,10 @@
       </div>
     </div>
     <div class="col-md-5 text-center">
+      <!-- Este es el espacio para tu logo futuro -->
       <div class="circulo-logo">
         <div class="logo-placeholder">
+          <!-- Aquí puedes colocar tu logo (imagen o texto) -->
 <img src="img/Cohete con bordes az.png" 
          alt="Logo Polaris" 
          style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
@@ -90,7 +92,7 @@
       <!-- PolariX -->
       <div class="col-lg-4">
         <div class="tarjeta-vidrio h-100">
-          <img src="images/logo.jpeg" class="img-proyecto card-img-top" alt="PolariX">
+          <img src="img/polarix.jpeg" class="img-proyecto card-img-top" alt="PolariX">
           <div class="card-body p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h3 class="h2 fw-bold mb-0">PolariX</h3>
@@ -107,7 +109,7 @@
       <!-- Mentes en Órbita -->
       <div class="col-lg-4">
         <div class="tarjeta-vidrio h-100">
-          <img src="https://alcalaopina.es/wp-content/uploads/Alumnos-del-IES-Antonio-Machado-construiran-y-lanzaran-un-mini.jpg" class="img-proyecto card-img-top" alt="Mentes en Órbita">
+          <img src="img/mentesenorbita.jpeg" class="img-proyecto card-img-top" alt="Mentes en Órbita">
           <div class="card-body p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h3 class="h2 fw-bold mb-0">Mentes en Órbita</h3>
@@ -124,7 +126,7 @@
       <!-- Hydronautas -->
       <div class="col-lg-4">
         <div class="tarjeta-vidrio h-100">
-          <img src="https://tse1.mm.bing.net/th/id/OIP.nZ0kPcb8hBdNCDbaRXpRDQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" class="img-proyecto card-img-top" alt="Hydronautas">
+          <img src="img/hydronauts.jpeg" class="img-proyecto card-img-top" alt="Hydronautas">
           <div class="card-body p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h3 class="h2 fw-bold mb-0">Hydronautas</h3>
@@ -155,10 +157,7 @@
 
     <!-- Carrusel manual con flechas hacia afuera -->
     <div id="carruselMiembros" class="carousel slide carrusel-miembros" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carruselMiembros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
-        <button type="button" data-bs-target="#carruselMiembros" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
-      </div>
+      
       <div class="carousel-inner">
         <!-- Diapositiva 1 -->
         <div class="carousel-item active">
@@ -167,7 +166,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/1005/200/200" class="img-miembro" alt="Dra. Kai Chen">
                 <h4 class="nombre-miembro">Alumno 1</h4>
-                <p class="proyectos-miembro">PolariX · Hydronautas</p>
+                <p class="proyectos-miembro"><i class="bi bi-stars me-1" style="color: #cfdf7a;"></i> PolariX · Hydronautas</p>
                 <div class="frase-miembro">«La gravedad no detiene mi curiosidad»</div>
                 <span class="anio-miembro">2021</span>
               </div>
@@ -176,7 +175,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/1012/200/200" class="img-miembro" alt="Miguel Ortega">
                 <h4 class="nombre-miembro">Alumno 2</h4>
-                <p class="proyectos-miembro"> Mentes en Órbita</p>
+                <p class="proyectos-miembro"><i class="bi bi-cpu me-1" style="color: #b0d0ff;"></i> Mentes en Órbita</p>
                 <div class="frase-miembro">«El cerebro es el próximo horizonte»</div>
                 <span class="anio-miembro">2022</span>
               </div>
@@ -185,7 +184,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/106/200/200" class="img-miembro" alt="Iliana Petrova">
                 <h4 class="nombre-miembro">Alumno 3</h4>
-                <p class="proyectos-miembro"> Hydronautas · PolariX</p>
+                <p class="proyectos-miembro"><i class="bi bi-droplet me-1" style="color: #80b5e0;"></i> Hydronautas · PolariX</p>
                 <div class="frase-miembro">«Bajo el hielo, la vida espera»</div>
                 <span class="anio-miembro">2020</span>
               </div>
@@ -199,7 +198,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/1043/200/200" class="img-miembro" alt="James Keller">
                 <h4 class="nombre-miembro">JAlumno 4</h4>
-                <p class="proyectos-miembro"> PolariX</p>
+                <p class="proyectos-miembro"><i class="bi bi-stars me-1" style="color: #cfdf7a;"></i> PolariX</p>
                 <div class="frase-miembro">«Navegamos por las estrellas»</div>
                 <span class="anio-miembro">2023</span>
               </div>
@@ -208,7 +207,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/100/200/200" class="img-miembro" alt="Sofía Nuñez">
                 <h4 class="nombre-miembro">Alumno 5</h4>
-                <p class="proyectos-miembro"> Mentes en Órbita</p>
+                <p class="proyectos-miembro"><i class="bi bi-cpu me-1" style="color: #b0d0ff;"></i> Mentes en Órbita</p>
                 <div class="frase-miembro">«La mente no tiene fronteras»</div>
                 <span class="anio-miembro">2021</span>
               </div>
@@ -217,7 +216,7 @@
               <div class="tarjeta-miembro">
                 <img src="https://picsum.photos/id/102/200/200" class="img-miembro" alt="Elias Voss">
                 <h4 class="nombre-miembro">Alumno 6</h4>
-                <p class="proyectos-miembro"> Hydronautas</p>
+                <p class="proyectos-miembro"><i class="bi bi-droplet me-1" style="color: #80b5e0;"></i> Hydronautas</p>
                 <div class="frase-miembro">«Exploramos lo inexplorado»</div>
                 <span class="anio-miembro">2022</span>
               </div>
@@ -241,18 +240,20 @@
 <section id="cta" class="cta-mejorado">
   <div class="container py-5">
     <div class="tarjeta-cta text-center">
-      <h2 class="display-3 texto-degradado mb-4">Registro de Investigadores</h2>
-      <p class="fs-4 mb-4 text-light">Este portal está habilitado exclusivamente para la <strong class="text-info">documentación oficial</strong> de los integrantes de PolariX, Mentes en Órbita e Hydronautas.</p>
+      <h2 class="display-3 texto-degradado mb-4">Únete a la exploración</h2>
+      <p class="fs-4 mb-4 text-light">La membresía está reservada para quienes han participado en <strong class="text-info">PolariX, Mentes en Órbita o Hydronautas</strong>.</p>
       
+      <!-- Elemento destacado más atractivo -->
       <div class="texto-resaltado mb-4">
-        <p class="my-3">Si formas parte de un proyecto activo, inicia tu proceso de indexación</p>
+    
+        <p class="my-3">Si ya eres parte de un proyecto, solicita tu acceso ahora</p>
       </div>
 
       <a href="registro.html" class="btn boton-neon btn-lg px-5 py-3 fs-4">
-        <i class="bi bi-clipboard-data me-2"></i>Registrar mis datos
+        <i class="bi bi-send me-2"></i>Solicitar membresía
       </a>
       <p class="mt-4 text-light opacity-50 small">
-        <i class="bi bi-database-check"></i> Los datos recolectados se utilizarán para el seguimiento documental del programa.
+        <i class="bi bi-shield-lock"></i> Verificación de credenciales requerida
       </p>
     </div>
   </div>
